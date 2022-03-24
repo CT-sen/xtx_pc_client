@@ -49,3 +49,128 @@
   background-image: url(../images/sprites.png);
   background-position: -80px -110px;
 }
+
+.prev,
+.next{
+position: absolute;
+top: 228px;
+width: 45px;
+height: 45px;
+background-color: rgba(0,0,0,.2);
+background-image: url(../images/sprites.png);
+border-radius: 50%;
+}
+.prev{
+  left:260px;
+  background-position: 14px -60px;
+}
+.next{
+  right: 10px;
+  background-position: -23px -60px;
+}
+
+.banner ol{
+  position: absolute;
+  left: 680px;
+  bottom: 30px;
+  /* width: 200px; */
+  height: 10px;
+  /* background-color: pink; */
+}
+
+.banner ol li {
+  float: left;
+  margin-right: 24px;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(225,255,255,.4);
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+
+.banner ol .current{
+  background-color: #fff;
+}
+
+/* goods */
+.goods .hd{
+  height: 114px;
+  /* background-color: pink; */
+  line-height: 114px;
+}
+.goods .hd h2{
+  float: left;
+  font-size: 29px;
+  font-weight: normal;
+  height: 112px;
+}
+
+.goods .hd h2 span{
+  margin-left: 34px;
+  font-size: 16px;
+  color: #999;
+}
+
+.goods .hd a{
+  float: right;
+  color: #999;
+
+}
+.goods .hd a::after{
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  margin-left: 13px;
+  background-image: url(../images/sprites.png);
+  background-position: 0 -110px;
+  vertical-align: middle;
+}
+
+.goods .bd li {
+  position: relative;
+  float: left;
+  margin-right: 8px;
+  width: 304px;
+  height: 405px;
+  background-color: #f0f9f4;
+  text-align:center;
+}
+.goods .bd li:nth-child(4n){
+  margin-right: 0;
+}
+
+.goods .bd li img{
+  width: 304px;
+}
+.goods .bd li h3{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.goods .bd li div{
+  color: #9a2e1f;
+  font-size: 17px;
+}
+
+.goods .bd li div span{
+  font-size: 23px;
+}
+
+.goods .bd li b{
+  position: absolute;
+  left:17px ;
+  top: 18px;
+  width: 28px;
+  height: 51px;
+  border: 1px solid #27ba9b;
+  font-size: 18px;
+  font-family: PingFangSC-Regular;
+  color:#27ba9b ;
+  line-height: 24px;
+  font-weight: normal;
+  border-radius: 2px;
+}
