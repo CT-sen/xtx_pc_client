@@ -112,12 +112,14 @@ border-radius: 50%;
   color: #999;
 }
 
-.goods .hd a{
+.goods .hd a,
+.shengxian .hd .more{
   float: right;
   color: #999;
 
 }
-.goods .hd a::after{
+.goods .hd a::after,
+.shengxian .hd .more::after{
   content: '';
   display: inline-block;
   width: 7px;
@@ -173,4 +175,82 @@ border-radius: 50%;
   line-height: 24px;
   font-weight: normal;
   border-radius: 2px;
+}
+/* 推荐 */
+.tuijian .bd li h3{
+  font-size: 21px;
+}
+.tuijian .bd li div  span{
+  color: #999;
+  font-size: 16px;
+}
+.shengxian .hd{
+  height: 96px;
+  line-height: 96px;
+
+  /* background-color: pink; */
+}
+.shengxian h2{
+  display: inline-block;
+  font-size: 29px;
+  font-weight: normal;  
+  margin-right: 65px;
+
+}
+
+.shengxian .hd ul{
+  float: right;
+  margin-right: 65px;
+
+}
+.shengxian .hd li{
+  float: left;
+}
+.shengxian .hd li a{
+  width: 32px;
+  height: 16px;
+  /* background-color: black; */
+  padding: 2px 7px;
+  margin-left: 6px;
+}
+.shengxian .hd li a:hover{
+  background-color: #27ba9b;
+  color: #fefbfc;
+}
+
+.shengxian .hd .more{
+  float: right;
+}
+
+.shengxian .bd .left{
+  float: left;
+  width: 240px;
+  height: 610px;
+  background-color: pink;
+}
+
+.shengxian .bd .right{
+  float: left;
+  width: 1000px;
+  height: 610px;
+  /* background-color: skyblue; */
+}
+.shengxian .bd .right li{
+  float: left;
+  width: 242px;
+  height: 304px;
+  padding: 8px 29px;
+
+}
+.shengxian .bd .right li img{
+  width: 160px;
+  vertical-align: middle;
+}
+.shengxian .bd .right li p{
+  display: inline-block;
+  width: 160px;
+}
+.shengxian .bd .right li span{
+  font-size: 22px;
+  color: #9a2e1f;
 }
