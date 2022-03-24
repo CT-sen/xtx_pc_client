@@ -83,135 +83,132 @@
     height: 70px;
 }
 
-.nav li {
-    float: left;
+.nav li{
+    float: left; 
     margin-right: 48px;
     line-height: 70px;
 }
 
-.nav li a {
+.nav li a{
     padding-bottom: 7px;
 }
 
-
-.nav li a:hover {
+.nav li a:hover{
     color: #27ba9b;
     border-bottom: 1px solid #27ba9b;
 }
 
-.search {
-    position: relative;
+
+.search{
     float: left;
-    margin-top: 24px;
+    position: relative;
     margin-left: 34px;
-    width: 172px;
+    margin-top: 24px;
+    width:172px;
     height: 30px;
     border-bottom: 2px solid #e7e7e7;
 }
 
-.search input {
+.search input{
     padding-left: 30px;
     width: 172px;
     height: 28px;
 }
-
-.search input::placeholder {
-    font-size: 14px;
+.search input::placeholder{
+    font-style: 14px;
     color: #ccc;
 }
 
-.search span {
+.search span{
     position: absolute;
     left: 2px;
     top: 0;
     /* display: inline-block; */
     width: 18px;
     height: 18px;
+    /* background-color: pink; */
     background-image: url(../images/sprites.png);
-    background-position: -79px -69px;
+    background-position: -79px -69px; 
 }
 
-.car {
+.car{
     position: relative;
     float: left;
     margin-top: 28px;
     margin-left: 15px;
     width: 23px;
     height: 23px;
+    /* background-color: skyblue; */
     background-image: url(../images/sprites.png);
     background-position: -119px -69px;
 }
-
-.car span {
-    /* 绝对定位, 盒子具备行内块特点 */
+.car span{
     position: absolute;
     right: -13px;
     top: -6px;
-    width: 20px;
-    height: 15px;
-    background-color: #e26237;
-    border-radius: 8px;
+     width: 20px;
+     height: 15px;
+     background-color: #e26237;
+     border-radius: 8px;
 
-    font-size: 13px;
-    color: #fff;
-    text-align: center;
-    line-height: 15px;
+     font-size: 13px;
+     color: #fff;
+     text-align: center;
+     line-height: 15px;
 }
 
-/* 版权footer */
-.footer {
+/* 底部版权footer */
+.footer{
     height: 342px;
-    background-color: #333;
+    background-color:#333;
 }
-
-.footer .wrapper {
+.footer .wrapper{
     width: 1393px;
 }
-
-.footer .top {
+.footer .top{
+    height:175px;
+    /* background-color: pink; */
     padding-top: 59px;
     padding-left: 135px;
-    height: 175px;
     border-bottom: 3px solid #434343;
 }
 
-.footer .top li {
+.footer .top li{
     position: relative;
     float: left;
-    margin-right: 300px;
-    width: 195px;
+    width: 193px;
     height: 58px;
-
+    margin-right: 300px;
+    font-size: 28px;
     line-height: 58px;
+    /* background-color: pink; */
+    color: #fff;
 }
-
-.footer .top li:last-child {
-    margin-right: 0;
-}
-
-/* 伪元素添加的标签  行内 */
-/* 如果行内块和行内文字无法通过vertical-align或行高对齐, 定位 */
-.footer .top li::before {
-    position: absolute;
-    left: 0;
-    top: 0;
-    /* display: inline-block; */
+.footer .top li::before{
     content: '';
     width: 58px;
     height: 58px;
+    position: absolute;
+    top: 0;
+    left: 0;
     background-image: url(../images/sprites.png);
+    
     vertical-align: middle;
+
+}
+.footer .top li:last-child{
+    margin-right: 0;
 }
 
-.footer .top li span {
+.footer .top li span{
     margin-left: 77px;
-    font-size: 28px;
-    color: #fff;
 }
 
-/* 第二个li里面的berfore添加背景图位置属性 */
-.footer .top li:nth-child(2)::before {
+.footer .top li:nth-child(2)::before{
     background-position: -64px 0;
+}
+.footer .top li:nth-child()::before{
+    background-position: -132px 0;
 }
 
 .footer .bottom {
@@ -220,12 +217,10 @@
     color: #999;
     text-align: center;
 }
-
-.footer .bottom a {
+.footer .bottom a{
     font-size: 14px;
     color: #999;
 }
-
-.footer .bottom p {
+.footer .bottom p{
     margin-bottom: 20px;
 }
